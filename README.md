@@ -1,33 +1,56 @@
 # LeadersWayPro
 
-Site vitrine de **LeadersWayPro** — « Communiquez comme un Leader » — le programme de formation et de
-coaching en communication de leadership d'Ilhem Zabi, destiné aux dirigeants, managers et entrepreneurs
-francophones.
+Site vitrine de **LeadersWayPro** — « Communiquez comme un Leader » / «تواصل كقائد» — le programme de
+formation et de coaching en communication de leadership d'Ilhem Zabi, destiné aux dirigeants, managers
+et entrepreneurs francophones et arabophones. Le site est **bilingue français / arabe**, avec des pages
+dédiées et une bascule de langue dans la navigation.
 
 ## Aperçu
 
 Site statique (HTML / CSS / JS, sans framework ni build) construit autour du parcours de conversion de
-la marque :
+la marque, décliné dans les deux langues :
 
-1. **Accueil** (`index.html`) — proposition de valeur, méthode, aperçu des offres, témoignages.
-2. **Formations** (`formations.html`) — détail des 3 offres : formation gratuite de 2 jours, programme
-   signature « Communiquez comme un Leader », coaching individuel & entreprise, + FAQ.
-3. **À propos** (`a-propos.html`) — portrait d'Ilhem Zabi, mission, vision, valeurs.
-4. **Contact** (`contact.html`) — coordonnées et formulaire de réservation de consultation.
+1. **Accueil** (`index.html` / `ar/index.html`) — proposition de valeur, méthode, aperçu des offres, témoignages.
+2. **Formations** (`formations.html` / `ar/formations.html`) — détail des 3 offres : formation gratuite
+   de 2 jours, programme signature « Communiquez comme un Leader », coaching individuel & entreprise, + FAQ.
+3. **À propos** (`a-propos.html` / `ar/a-propos.html`) — portrait d'Ilhem Zabi, mission, vision, valeurs.
+4. **Contact** (`contact.html` / `ar/contact.html`) — coordonnées et formulaire de réservation de consultation.
+
+Chaque page porte un bouton « 🌐 العربية » (pages FR) ou « 🌐 Français » (pages AR) dans la navigation,
+qui bascule vers l'équivalent exact de la page courante dans l'autre langue.
 
 ## Structure
 
 ```
 .
-├── index.html
+├── index.html              # pages françaises (racine)
 ├── formations.html
 ├── a-propos.html
 ├── contact.html
+├── ar/                      # pages arabes (RTL), mêmes noms de fichiers
+│   ├── index.html
+│   ├── formations.html
+│   ├── a-propos.html
+│   └── contact.html
 └── assets/
-    ├── css/style.css   # design system (couleurs, typographie, composants)
+    ├── css/style.css   # design system partagé (couleurs, typographie, composants)
+    ├── css/rtl.css     # surcharges RTL + police arabe, chargé uniquement par les pages ar/
     ├── js/main.js      # menu mobile, FAQ accordéon, animations au scroll, formulaires
-    └── img/            # emplacement pour les visuels réels (logo, photos, portrait)
+    └── img/            # visuels réels (logo, photos, portrait — partagés entre FR et AR)
 ```
+
+### Comment fonctionne la version arabe
+
+- Les pages `ar/*.html` ont `<html lang="ar" dir="rtl">` : la mise en page (grilles, flexbox) se
+  réoriente automatiquement en miroir grâce au CSS Grid/Flexbox nativement sensibles à `dir`.
+- `assets/css/rtl.css` ne corrige que ce qui reste "physique" en CSS (positions `left/right` en dur,
+  majuscules/espacement de lettres qui ne conviennent pas à l'arabe) et charge la police **Cairo**
+  (adaptée à l'arabe) à la place de Playfair Display / Inter.
+- Les numéros de téléphone et emails sont enveloppés dans `<span class="ltr-embed">` pour rester
+  affichés de gauche à droite même dans une page RTL.
+- Pour ajouter une page arabe supplémentaire, dupliquez une page FR existante dans `ar/`, ajoutez
+  `dir="rtl" lang="ar"`, le lien vers `rtl.css`, préfixez les chemins vers `assets/` par `../`, et
+  traduisez le contenu.
 
 ## Lancer le site en local
 
@@ -65,9 +88,15 @@ collée inline n'est pas toujours accessible sur le disque pour être ajoutée a
 ## Connecter les formulaires à GoHighLevel (GHL)
 
 Les formulaires de `formations.html#gratuite` (inscription à la formation gratuite) et de
-`contact.html` (réservation de consultation) sont actuellement des formulaires HTML statiques : ils
-affichent un message de confirmation côté navigateur mais n'envoient les données nulle part. Chaque
-formulaire est encadré dans le code par un commentaire `INTÉGRATION GHL` qui indique où intervenir.
+`contact.html` (réservation de consultation) — ainsi que leurs équivalents `ar/formations.html#gratuite`
+et `ar/contact.html` — sont actuellement des formulaires HTML statiques : ils affichent un message de
+confirmation côté navigateur mais n'envoient les données nulle part. Chaque formulaire est encadré dans
+le code par un commentaire `INTÉGRATION GHL` qui indique où intervenir.
+
+Le site étant bilingue, prévoyez **deux formulaires GHL distincts** (un français, un arabe — c'est
+d'ailleurs le formulaire arabe déjà existant qui a motivé la création des pages `ar/`) : embarquez le
+formulaire français dans `formations.html` / `contact.html`, et le formulaire arabe dans
+`ar/formations.html` / `ar/contact.html`.
 
 Pour les remplacer par vos vrais formulaires GHL :
 

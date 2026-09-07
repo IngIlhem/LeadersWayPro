@@ -1,0 +1,65 @@
+/* =========================================================
+   LeadersWayPro — surcharges RTL / arabe
+   Chargé uniquement sur les pages arabes, après style.css.
+   Grid & Flexbox se réorientent déjà automatiquement avec dir="rtl" ;
+   ce fichier ne corrige que ce qui reste "physique" (left/right en dur,
+   espacement de lettres/majuscules qui ne conviennent pas à l'arabe).
+   ========================================================= */
+
+:root {
+  --font-display: "Cairo", "Tajawal", "Segoe UI", Tahoma, sans-serif;
+  --font-body: "Cairo", "Tajawal", "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  direction: rtl;
+}
+
+/* L'arabe n'a pas de casse : on retire majuscules forcées + espacement de lettres */
+.eyebrow,
+.hero-eyebrow,
+.brand-sub,
+.strip-label,
+.offer-badge,
+.offer-tag,
+.pill,
+.footer-col h4 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.eyebrow::before {
+  margin-inline-end: 0;
+}
+
+/* Badge "programme signature" : ancré en haut à droite en RTL */
+.offer-badge {
+  left: auto;
+  right: 32px;
+}
+
+/* Numéros, emails, montants : toujours affichés de gauche à droite */
+.ltr-embed {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+/* Le trait d'accroche décoratif du hero suit le sens de lecture */
+.hero::after {
+  right: auto;
+  left: -10%;
+}
+.cta-band::after {
+  right: auto;
+  left: -60px;
+}
+
+/* Icônes/flèches à liste conservent leur alignement de gap, rien à faire —
+   uniquement les décalages verticaux liés au nav mobile */
+@media (max-width: 720px) {
+  body.nav-open .nav-links {
+    right: 0;
+    left: 0;
+  }
+}
