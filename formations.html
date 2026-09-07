@@ -79,40 +79,29 @@
           <h3 style="margin-bottom:6px;">Je réserve ma place</h3>
           <p style="margin-bottom:24px;font-size:14.5px;">Places limitées à chaque session — confirmation par email sous 24h.</p>
 
-          <!--
-            INTÉGRATION GHL — formulaire "Formation gratuite"
-            Pour brancher le vrai formulaire GoHighLevel : supprimez le <form id="lead-form">...</form>
-            ci-dessous et collez ici le code d'intégration fourni par GHL (Sites > Forms > votre formulaire
-            > Embed en mode iFrame ou JS). Voir le README ("Connecter les formulaires à GoHighLevel") pour
-            la marche à suivre complète.
-          -->
-          <form id="lead-form">
-            <div class="field">
-              <label for="lf-name">Nom complet</label>
-              <input type="text" id="lf-name" name="name" placeholder="Votre nom et prénom" required />
-            </div>
-            <div class="field">
-              <label for="lf-email">Email</label>
-              <input type="email" id="lf-email" name="email" placeholder="vous@exemple.com" required />
-            </div>
-            <div class="field">
-              <label for="lf-phone">Téléphone</label>
-              <input type="tel" id="lf-phone" name="phone" placeholder="+216 99 686 966" required />
-            </div>
-            <div class="field">
-              <label for="lf-role">Votre fonction</label>
-              <select id="lf-role" name="role">
-                <option>Dirigeant·e / Fondateur·rice</option>
-                <option>Manager / Cadre</option>
-                <option>Entrepreneur·e</option>
-                <option>Commercial·e</option>
-                <option>Autre</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Réserver ma place gratuite</button>
-            <p class="form-note">En vous inscrivant, vous acceptez de recevoir des emails de LeadersWayPro liés à la formation. Désinscription possible à tout moment.</p>
-            <p class="form-feedback" hidden style="margin-top:16px;color:var(--success);font-weight:600;font-size:14.5px;"></p>
-          </form>
+          <!-- Vrai formulaire GHL — "Inscription Formation Gratuite - FR" -->
+          <div class="ghl-embed" style="min-height:2134px;">
+            <iframe
+                src="https://agency.sellaskill.site/widget/form/dgS1foEwcuRGUMUMap6T"
+                style="width:100%;height:100%;border:none;border-radius:8px"
+                id="inline-dgS1foEwcuRGUMUMap6T"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Inscription Formation Gratuite - FR"
+                data-height="2134"
+                data-layout-iframe-id="inline-dgS1foEwcuRGUMUMap6T"
+                data-form-id="dgS1foEwcuRGUMUMap6T"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Inscription Formation Gratuite - FR"
+                    >
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -280,6 +269,7 @@
   </div>
 </footer>
 
+<script src="https://agency.sellaskill.site/js/form_embed.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
