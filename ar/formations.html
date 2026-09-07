@@ -79,40 +79,29 @@
           <h3 style="margin-bottom:6px;">أحجز مكاني</h3>
           <p style="margin-bottom:24px;font-size:14.5px;">الأماكن محدودة في كل جلسة — تأكيد بالبريد الإلكتروني خلال 24 ساعة.</p>
 
-          <!--
-            دمج نموذج GHL — "التكوين المجاني"
-            لربط نموذج GoHighLevel الحقيقي (النسخة العربية): احذفوا <form id="lead-form">...</form>
-            أدناه، والصقوا هنا كود الدمج المقدم من GHL (Sites > Forms > النموذج المعني
-            > Embed بصيغة iFrame أو JS). راجعوا ملف README ("Connecter les formulaires à GoHighLevel")
-            للتفاصيل الكاملة.
-          -->
-          <form id="lead-form">
-            <div class="field">
-              <label for="lf-name">الاسم الكامل</label>
-              <input type="text" id="lf-name" name="name" placeholder="اسمك ولقبك" required />
-            </div>
-            <div class="field">
-              <label for="lf-email">البريد الإلكتروني</label>
-              <input type="email" id="lf-email" name="email" placeholder="you@example.com" required />
-            </div>
-            <div class="field">
-              <label for="lf-phone">الهاتف</label>
-              <input type="tel" id="lf-phone" name="phone" placeholder="+216 99 686 966" required />
-            </div>
-            <div class="field">
-              <label for="lf-role">وظيفتك</label>
-              <select id="lf-role" name="role">
-                <option>مدير/ة أو مؤسس/ة</option>
-                <option>مدير/ة أو إطار</option>
-                <option>رائد/ة أعمال</option>
-                <option>مسؤول/ة مبيعات</option>
-                <option>أخرى</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">أحجز مكاني المجاني</button>
-            <p class="form-note">بالتسجيل، أنت توافق على تلقي رسائل بريد إلكتروني من LeadersWayPro متعلقة بالتكوين. يمكن إلغاء الاشتراك في أي وقت.</p>
-            <p class="form-feedback" hidden style="margin-top:16px;color:var(--success);font-weight:600;font-size:14.5px;"></p>
-          </form>
+          <!-- نموذج GHL الحقيقي — "Inscription Formation Gratuite" (النسخة العربية) -->
+          <div class="ghl-embed" style="min-height:1954px;">
+            <iframe
+                src="https://agency.sellaskill.site/widget/form/u4fyVsVgZ3sfP13irwON"
+                style="width:100%;height:100%;border:none;border-radius:8px"
+                id="inline-u4fyVsVgZ3sfP13irwON"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Inscription Formation Gratuite"
+                data-height="1954"
+                data-layout-iframe-id="inline-u4fyVsVgZ3sfP13irwON"
+                data-form-id="u4fyVsVgZ3sfP13irwON"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Inscription Formation Gratuite"
+                    >
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -280,6 +269,7 @@
   </div>
 </footer>
 
+<script src="https://agency.sellaskill.site/js/form_embed.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
