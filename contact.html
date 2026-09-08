@@ -101,52 +101,29 @@
           <h3 style="margin-bottom:6px;">Réserver ma consultation stratégique</h3>
           <p style="margin-bottom:24px;font-size:14.5px;">30 minutes, gratuites et sans engagement, pour clarifier vos objectifs et le format le plus adapté.</p>
 
-          <!--
-            INTÉGRATION GHL — formulaire "Consultation stratégique"
-            Pour brancher le vrai formulaire GoHighLevel (ou un calendrier de prise de RDV) : supprimez
-            le <form id="contact-form">...</form> ci-dessous et collez ici le code d'intégration fourni
-            par GHL (Sites > Forms/Calendars > votre formulaire > Embed en mode iFrame ou JS). Voir le
-            README ("Connecter les formulaires à GoHighLevel") pour la marche à suivre complète.
-          -->
-          <form id="contact-form">
-            <div class="form-row">
-              <div class="field">
-                <label for="c-firstname">Prénom</label>
-                <input type="text" id="c-firstname" name="firstname" required />
-              </div>
-              <div class="field">
-                <label for="c-lastname">Nom</label>
-                <input type="text" id="c-lastname" name="lastname" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="field">
-                <label for="c-email">Email</label>
-                <input type="email" id="c-email" name="email" required />
-              </div>
-              <div class="field">
-                <label for="c-phone">Téléphone</label>
-                <input type="tel" id="c-phone" name="phone" required />
-              </div>
-            </div>
-            <div class="field">
-              <label for="c-topic">Vous êtes intéressé·e par</label>
-              <select id="c-topic" name="topic">
-                <option>Formation gratuite (2 jours)</option>
-                <option>Programme signature « Communiquez comme un Leader »</option>
-                <option>Coaching individuel</option>
-                <option>Formation en entreprise / intra-entreprise</option>
-                <option>Autre demande</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="c-message">Votre message</label>
-              <textarea id="c-message" name="message" placeholder="Décrivez brièvement votre contexte et vos objectifs..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
-            <p class="form-note">Vos données restent confidentielles et ne sont utilisées que pour vous recontacter au sujet de votre demande.</p>
-            <p class="form-feedback" hidden style="margin-top:16px;color:var(--success);font-weight:600;font-size:14.5px;"></p>
-          </form>
+          <!-- Vrai formulaire GHL — "Inscription Consultation Gratuite FR" -->
+          <div class="ghl-embed" style="min-height:2134px;">
+            <iframe
+                src="https://agency.sellaskill.site/widget/form/VIBp4eDmFBcszaxSbyup"
+                style="width:100%;height:100%;border:none;border-radius:8px"
+                id="inline-VIBp4eDmFBcszaxSbyup"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Inscription Consultation Gratuite FR"
+                data-height="2134"
+                data-layout-iframe-id="inline-VIBp4eDmFBcszaxSbyup"
+                data-form-id="VIBp4eDmFBcszaxSbyup"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Inscription Consultation Gratuite FR"
+                    >
+            </iframe>
+          </div>
         </div>
 
       </div>
@@ -211,6 +188,7 @@
   </div>
 </footer>
 
+<script src="https://agency.sellaskill.site/js/form_embed.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

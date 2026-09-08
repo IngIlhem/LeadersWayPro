@@ -102,52 +102,29 @@
           <h3 style="margin-bottom:6px;">احجز استشارتي الاستراتيجية</h3>
           <p style="margin-bottom:24px;font-size:14.5px;">30 دقيقة، مجانية ودون أي التزام، لتوضيح أهدافك واختيار الصيغة الأنسب لك.</p>
 
-          <!--
-            دمج نموذج GHL — "الاستشارة الاستراتيجية"
-            لربط نموذج GoHighLevel الحقيقي (أو تقويم حجز موعد) — النسخة العربية: احذفوا
-            <form id="contact-form">...</form> أدناه، والصقوا هنا كود الدمج المقدم من GHL
-            (Sites > Forms/Calendars > النموذج المعني > Embed بصيغة iFrame أو JS).
-            راجعوا ملف README ("Connecter les formulaires à GoHighLevel") للتفاصيل الكاملة.
-          -->
-          <form id="contact-form">
-            <div class="form-row">
-              <div class="field">
-                <label for="c-firstname">الاسم الأول</label>
-                <input type="text" id="c-firstname" name="firstname" required />
-              </div>
-              <div class="field">
-                <label for="c-lastname">اللقب</label>
-                <input type="text" id="c-lastname" name="lastname" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="field">
-                <label for="c-email">البريد الإلكتروني</label>
-                <input type="email" id="c-email" name="email" required />
-              </div>
-              <div class="field">
-                <label for="c-phone">الهاتف</label>
-                <input type="tel" id="c-phone" name="phone" required />
-              </div>
-            </div>
-            <div class="field">
-              <label for="c-topic">أنت مهتم بـ</label>
-              <select id="c-topic" name="topic">
-                <option>التكوين المجاني (يومان)</option>
-                <option>البرنامج الرئيسي «تواصل كقائد»</option>
-                <option>تدريب فردي</option>
-                <option>تكوين داخل المؤسسة</option>
-                <option>طلب آخر</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="c-message">رسالتك</label>
-              <textarea id="c-message" name="message" placeholder="اشرح باختصار سياقك وأهدافك..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">أرسل طلبي</button>
-            <p class="form-note">تبقى بياناتك سرية ولا تُستخدم إلا للتواصل معك بخصوص طلبك.</p>
-            <p class="form-feedback" hidden style="margin-top:16px;color:var(--success);font-weight:600;font-size:14.5px;"></p>
-          </form>
+          <!-- نموذج GHL الحقيقي — "Inscription Consultation Gratuite" (النسخة العربية) -->
+          <div class="ghl-embed" style="min-height:1954px;">
+            <iframe
+                src="https://agency.sellaskill.site/widget/form/gQqbMcm4nrUoq26zstDF"
+                style="width:100%;height:100%;border:none;border-radius:8px"
+                id="inline-gQqbMcm4nrUoq26zstDF"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Inscription Consultation Gratuite"
+                data-height="1954"
+                data-layout-iframe-id="inline-gQqbMcm4nrUoq26zstDF"
+                data-form-id="gQqbMcm4nrUoq26zstDF"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Inscription Consultation Gratuite"
+                    >
+            </iframe>
+          </div>
         </div>
 
       </div>
@@ -212,6 +189,7 @@
   </div>
 </footer>
 
+<script src="https://agency.sellaskill.site/js/form_embed.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
