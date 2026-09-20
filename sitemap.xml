@@ -30,6 +30,24 @@
   </url>
 
   <url>
+    <loc>https://leadersway-pro.com/consultation-gratuite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/consultation-gratuite.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/consultation-gratuite.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leadersway-pro.com/consultation-gratuite.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://leadersway-pro.com/formation-payante.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/formation-payante.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/formation-payante.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leadersway-pro.com/formation-payante.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://leadersway-pro.com/a-propos.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/a-propos.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/a-propos.html" />
@@ -70,6 +88,24 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/formation-gratuite.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/formation-gratuite.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://leadersway-pro.com/formation-gratuite.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://leadersway-pro.com/ar/consultation-gratuite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/consultation-gratuite.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/consultation-gratuite.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leadersway-pro.com/consultation-gratuite.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://leadersway-pro.com/ar/formation-payante.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://leadersway-pro.com/formation-payante.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://leadersway-pro.com/ar/formation-payante.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leadersway-pro.com/formation-payante.html" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
