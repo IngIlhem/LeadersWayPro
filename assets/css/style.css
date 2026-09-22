@@ -520,10 +520,10 @@ button { font-family: inherit; cursor: pointer; }
   background: radial-gradient(900px 500px at 90% -20%, rgba(201,162,39,0.14), transparent 60%),
               linear-gradient(180deg, var(--navy-950), var(--navy-900));
   color: var(--white);
-  padding: 72px 0 64px;
+  padding: 96px 0 64px;
 }
-.page-header .eyebrow { color: var(--gold-400); }
-.page-header h1 { color: var(--white); font-size: clamp(32px, 4vw, 46px); margin-bottom: 14px; }
+.page-header .eyebrow { color: var(--gold-400); display: block; margin-bottom: 10px; }
+.page-header h1 { color: var(--white); font-size: clamp(32px, 4vw, 46px); line-height: 1.25; margin-top: 6px; margin-bottom: 14px; }
 .breadcrumb { display: flex; gap: 8px; font-size: 13px; color: rgba(250,247,242,0.6); margin-bottom: 20px; }
 .breadcrumb a:hover { color: var(--gold-400); }
 
